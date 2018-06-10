@@ -29,7 +29,6 @@ export function createFeature(options: any): Rule {
     mergeWith(
       apply(url('./files'), [
         template({
-          name: dasherize(options.name),
           dasherizedName: dasherize(options.name),
           classifiedName: classify(options.name),
           camelizedName: camelize(options.name),

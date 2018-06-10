@@ -28,7 +28,6 @@ export function createReducer(options: any): Rule {
     mergeWith(
       apply(url('./files'), [
         template({
-          name: options.name,
           dasherizedName: dasherize(options.name),
           classifiedName: classify(options.name),
           camelizedName: camelize(options.name),
