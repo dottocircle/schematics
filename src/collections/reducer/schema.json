@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "ReducerSchema",
+  "title": "Reducer Schematics Schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string",
+      "default": "/"
+    }
+  },
+  "required": ["name"]
+}
