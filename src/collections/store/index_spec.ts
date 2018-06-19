@@ -14,9 +14,20 @@ describe('store', () => {
 
   it('works', () => {
     const runner = new SchematicTestRunner('schematics', collectionPath);
-    const tree = runner.runSchematic('store', { name: 'str' }, Tree.empty());
+    const tree = runner.runSchematic(
+      'store',
+      { featureName: 'str' },
+      Tree.empty()
+    );
 
     // Listing files
-    expect(tree.files.sort()).toEqual(['/allo', '/hola', '/test1', '/test2']);
+    expect(tree.files.sort()).toEqual([
+      '/store/actions/index.ts',
+      '/store/effects/index.ts',
+      '/store/guards/index.ts',
+      '/store/index.ts',
+      '/store/reducers/index.ts',
+      '/store/selectors/index.ts'
+    ]);
   });
 });

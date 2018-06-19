@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { <%= classifiedName %>Component } from './<%= dasherizedName %>.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: <%= classifiedName %>Component
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

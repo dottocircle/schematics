@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Actions, Effect } from '@ngrx/effects';
 
 // rxjs
-import { of } from 'rxjs';
+import { of } from 'rxjs/Observable/of';
 import { mergeMap, catchError } from 'rxjs/operators';
 
 import { 

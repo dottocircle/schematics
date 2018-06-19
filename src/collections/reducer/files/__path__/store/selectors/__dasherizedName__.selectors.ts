@@ -1,9 +1,9 @@
 import { createSelector } from '@ngrx/store';
 
-import {  } from '../reducers';
+import { get<%= featureName %>State } from '../reducers';
 
 export const get<%= classifiedName %>State = createSelector(
-  '__',
+  get<%= featureName %>State,
   (state) => {
     if (state == null) {
       return null;
