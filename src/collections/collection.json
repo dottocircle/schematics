@@ -1,0 +1,22 @@
+{
+  "$schema":
+    "../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "extends": ["@schematics/angular"],
+  "schematics": {
+    "feature": {
+      "description": "add new feature",
+      "factory": "./feature/index#createFeature",
+      "schema": "./feature/schema.json"
+    },
+    "store": {
+      "description": "add new store",
+      "factory": "./store/index#createStore",
+      "schema": "./store/schema.json"
+    },
+    "reducer": {
+      "description": "add new reducer",
+      "factory": "./reducer/index#createReducer",
+      "schema": "./reducer/schema.json"
+    }
+  }
+}
