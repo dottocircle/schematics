@@ -11,6 +11,7 @@
   ],
   "author": "Shakil Khan",
   "license": "MIT",
+  "repository": "https://github.com/elitecareer/schematics.git",
   "schematics": "./src/collections/collection.json",
   "dependencies": {
     "@angular-devkit/core": "^0.7.0-beta.2",
